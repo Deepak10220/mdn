@@ -1,16 +1,24 @@
 import React from 'react'
-
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Footer2 from './components/Footer2'
+import Footer3 from './components/Footer3'
 function App() {
   return (
-    <div className='w-[50%] m-6 '>
-      <h1 className='font-semibold text-3xl'>Topics covered</h1>
-      <p className='text-xl mb-5'>The following is a list of all the topics we cover in the MDN learning area.</p>
-      <a className='text-xl mb-3 text-blue-400 underline' href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web">Getting started with the web</a>
-      <p className='text-xl mb-5 ml-5'>Provides a practical introduction to web development for complete beginners.</p>
-      <a className='text-xl mb-3 text-blue-400 underline' href="https://developer.mozilla.org/en-US/docs/Learn/HTML">HTML — Structuring the web</a>
-      <p className='text-xl mb-5 ml-5'>HTML is the language that we use to structure the different parts of our content and define what their meaning or purpose is. This topic teaches HTML in detail.</p>
-      <a className='text-xl mb-3 text-blue-400 underline' href="https://developer.mozilla.org/en-US/docs/Learn/CSS">CSS — Styling the web</a>
-      <p className='text-xl mb-5 ml-5'>CSS is the language that we use to control our web content's style and layout, as well as adding behavior like animation. This topic provides comprehensive coverage of CSS.</p>
+    <div className='w-full h-screen  font-serif'>
+      <h1 className='text-4xl'>Health Wellness</h1>
+      <h3 className='text-2xl'>MASSAGE THERAPY</h3>
+      <Navbar/>
+      <img className='object-cover w-full mb-5' src='https://images.pexels.com/photos/7149181/pexels-photo-7149181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='image'/>
+      <Footer/>
+      <div className='w-[90%] m-auto text-center '>
+        <p className='text-xs mt-4 mb-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque expedita id explicabo repellendus totam eius quas dolore error. Temporibus quisquam sit labore nihil sapiente magnam autem voluptatem quaerat alias et.</p>
+        <p className='text-xs mt-4 mb-4'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto eos libero commodi facere, et, quam expedita maxime cupiditate temporibus molestias sint. Dolores rerum placeat possimus fugit vel iste saepe qui.</p>
+        <p className='text-xs mt-4 mb-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt amet fugit dolor sit placeat sequi exercitationem nihil aliquid, vero, labore, autem natus vel dolores eligendi cupiditate fuga? Necessitatibus, impedit autem?</p>
+      </div>
+      <hr className=' mb-5 mt-5 h-1' />
+      <Footer2/>
+      <Footer3/>
     </div>
   )
 }
