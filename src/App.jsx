@@ -1,24 +1,22 @@
 import React from 'react'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import Footer2 from './components/Footer2'
-import Footer3 from './components/Footer3'
+
 function App() {
   return (
-    <div className='w-full h-screen  font-serif'>
-      <h1 className='text-4xl'>Health Wellness</h1>
-      <h3 className='text-2xl'>MASSAGE THERAPY</h3>
-      <Navbar/>
-      <img className='object-cover w-full mb-5' src='https://images.pexels.com/photos/7149181/pexels-photo-7149181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='image'/>
-      <Footer/>
-      <div className='w-[90%] m-auto text-center '>
-        <p className='text-xs mt-4 mb-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque expedita id explicabo repellendus totam eius quas dolore error. Temporibus quisquam sit labore nihil sapiente magnam autem voluptatem quaerat alias et.</p>
-        <p className='text-xs mt-4 mb-4'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto eos libero commodi facere, et, quam expedita maxime cupiditate temporibus molestias sint. Dolores rerum placeat possimus fugit vel iste saepe qui.</p>
-        <p className='text-xs mt-4 mb-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt amet fugit dolor sit placeat sequi exercitationem nihil aliquid, vero, labore, autem natus vel dolores eligendi cupiditate fuga? Necessitatibus, impedit autem?</p>
-      </div>
-      <hr className=' mb-5 mt-5 h-1' />
-      <Footer2/>
-      <Footer3/>
+    <div className='w-[40%] m-5 '>
+    <h1 className='text-4xl'>Topics covered</h1>
+    <p className='mt-4 mb-4'>The following is a list of all the topics we cover in the MDN learning area.</p>
+    <div className='mb-5'>
+    <a className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" href="">Getting started with the web</a>
+      <p>HTML is the language that we use to structure the different parts of our content and define what their meaning or purpose is. This topic teaches HTML in detail.</p>
+    </div>
+    <div className='mb-5'>
+      <a className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"  href="">CSS — Styling the web</a>
+      <p>CSS is the language that we use to control our web content's style and layout, as well as adding behavior like animation. This topic provides comprehensive coverage of CSS.</p>
+    </div>
+    <div className='mb-5'>
+      <a className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"  href="">JavaScript — Dynamic client-side scripting</a>
+      <p>JavaScript is the scripting language used to add dynamic functionality to web pages. This topic teaches all the essentials needed to become comfortable with writing and understanding JavaScript.</p>
+    </div>
     </div>
   )
 }
